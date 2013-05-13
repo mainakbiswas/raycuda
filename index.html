@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Raycuda : Ray tracer with uniform space division acceleration structure in CUDA (50x speedup compared to rayserial)" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Raycuda</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mainakbiswas/raycuda">View on GitHub</a>
+
+          <h1 id="project_title">Raycuda</h1>
+          <h2 id="project_tagline">Ray tracer with uniform space division acceleration structure in CUDA (50x speedup compared to rayserial)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mainakbiswas/raycuda/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mainakbiswas/raycuda/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>raycuda</h1>
+
+<p>Ray tracer with uniform space division acceleration structure in CUDA (50x speedup compared to rayserial)</p>
+
+<p>Compile - nvcc -arch=sm_20 -O5 raycuda.cu -o ray</p>
+
+<p>run - ./ray input.txt output.ppm</p>
+
+<p>sample input - dragon.txt</p>
+
+<p>input format
+eyex eyey eyez
+nLight nTri
+Lightx Lighty Lightz
+Lightcolr Lightcolg Lightcolb
+... nLight times
+Trip1x Trip1y Trip1z
+Trip2x Trip2y Trip2z
+Trip3x Trip3y Trip3z
+TriColr Tricolg TriColb
+Ka Kd Ks n
+... nTri times</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Raycuda maintained by <a href="https://github.com/mainakbiswas">mainakbiswas</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
